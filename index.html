@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinsala Mines Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Audio elements for sounds -->
+  <audio id="explosion-sound" src="explosion.mp3" preload="auto"></audio>
+  <audio id="ding-sound" src="ding.mp3" preload="auto"></audio>
+  <audio id="cashout-sound" src="cashout.mp3" preload="auto"></audio>
+
+  <div class="container">
+    <div class="settings">
+      <img src="spinsala.png" alt="Spinsala Logo" class="logo">
+      <h1>
+        <span class="yellow">Spinsala</span>
+        <span class="white">Mines</span>
+      </h1>
+      <label for="mine-count">Mines:</label>
+      <select id="mine-count">
+        <script>
+          for (let i = 3; i <= 24; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+          }
+        </script>
+      </select>
+      <label for="bet-amount">Amount:</label>
+      <input type="number" id="bet-amount" placeholder="Enter your bet" min="1" value="10">
+      <button id="bet-button">Bet</button>
+      <button id="cashout" disabled>Cashout</button>
+      <p>Multiplier: <span id="multiplier">1.0x</span></p>
+      <p>Potential Winnings: $<span id="winnings">0</span></p>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="notification" class="notification"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

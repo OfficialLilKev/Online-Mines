@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('spinsala-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+  padding: 20px;
+}
+
+label, p {
+  margin: 10px 0;
+}
+
+input, select, button {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+#bet-button {
+  background-color: black;
+  color: white;
+  border: 2px solid green;
+}
+
+#bet-button:hover {
+  background-color: green;
+  color: black;
+}
+
+#cashout {
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+}
+
+#cashout:hover {
+  background-color: red;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  width: 40vw;
+  height: 40vw;
+  gap: 4px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 8px solid yellow;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.8);
+}
+
+.tile {
+  background-color: #444;
+  border: 2px solid #666;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem; /* Increased font size */
+  color: #fff;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.tile:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Slightly increase the hover effect */
+}
+
+.tile.revealed {
+  cursor: default;
+  background-color: #333;
+}
+
+
+.notification {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 2rem;
+  animation: bubbleText 1s ease-in-out infinite;
+}
+
+h1 span.yellow {
+  color: yellow;
+}
+
+h1 span.white {
+  color: white;
+}
+
+h1 span.yellow, h1 span.white {
+  display: inline-block;
+}
+
+h1 span.yellow {
+  animation: bounce 1s infinite;
+}
+
+h1 span.white {
+  animation: bounce 1s infinite 0.5s;
+}
+
+@keyframes bubbleText {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: auto;
+}
