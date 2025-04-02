@@ -1,4 +1,4 @@
-# Spinsala Mines Game
+# Mines Game
 
 Welcome to **Spinsala Mines**, a thrilling gambling game inspired by the classic Mines game with a unique Spinsala twist. Test your luck by revealing tiles to uncover valuable gems while avoiding explosive bombs! Each tile you successfully reveal increases your multiplier, but beware – one wrong move, and you’ll hit a bomb!
 
