@@ -1,6 +1,6 @@
 # Mines Game
 
-Welcome to **Spinsala Mines**, a thrilling gambling game inspired by the classic Mines game with a unique Spinsala twist. Test your luck by revealing tiles to uncover valuable gems while avoiding explosive bombs! Each tile you successfully reveal increases your multiplier, but beware – one wrong move, and you’ll hit a bomb!
+Welcome to **Mines**, a thrilling gambling game inspired by the classic Mines game with a unique twist. Test your luck by revealing tiles to uncover valuable gems while avoiding explosive bombs! Each tile you successfully reveal increases your multiplier, but beware – one wrong move, and you’ll hit a bomb!
 
 ## Features
 - **Grid-based Gameplay:** A 5x5 grid full of hidden gems and bombs.
