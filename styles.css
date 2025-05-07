@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('spinsala-background.jpg') no-repeat center center fixed;
+  background: url('mines-background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
